@@ -1,0 +1,57 @@
+.ExpenseItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #ffdead;
+    color: #000;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.Date{
+    margin: 10px;
+}
+.Description{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    flex: 1;
+    margin: 10px;
+}
+.Title{
+    color: #943da6;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+}
+.Amount{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #943da6;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+
+@media (min-width: 500px){
+    .Description{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+    .Date{
+        font-size: 1rem;
+    }
+    .Title{
+        font-size: 1.25rem;
+    }
+    .Amount{
+        font-size: 1.25rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
