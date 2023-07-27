@@ -1,25 +1,21 @@
-import React from 'react'
-import './Expenses.css'
-import ExpenseItem from '../Expense-Item/ExpenseItem'
+import React from "react";
+import "./Expenses.css";
+import ExpenseItem from "../Expense-Item/ExpenseItem";
 
 function Expenses(props) {
-    const {expenses} = props;
-    var row = [];
-    for (const i in expenses) {
-      row.push(
-        <ExpenseItem
-          id={expenses[i].id}
-          title={expenses[i].title}
-          amount={expenses[i].amount}
-          date={expenses[i].date}
-        />
-      );
-    }
+  const { expenses } = props;
   return (
-    <div className='expenses'>
-      {row}    
+    <div className="expenses">
+      {expenses.map((expense) => 
+        <ExpenseItem
+          id={expense.id}
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+        />
+      )}
     </div>
-  )
+  );
 }
 
-export default Expenses
+export default Expenses;
