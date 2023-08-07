@@ -1,0 +1,40 @@
+.newExpense {
+  /* #943da6 */
+  /* #ffdead */
+  background: #000;
+  width: 50rem;
+  max-width: 95%;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 1px 8px #000;
+}
+
+.newExpense button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #cc143c;
+  background-color:#dc143c;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.newExpense button:hover,
+.newExpense button:active {
+  background-color: #510674;
+  border-color: #510674;
+}
+
+.newExpense button.alternative {
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.newExpense button.alternative:hover,
+.newExpense button.alternative:active {
+  background-color: #ddb3f8;
+}
