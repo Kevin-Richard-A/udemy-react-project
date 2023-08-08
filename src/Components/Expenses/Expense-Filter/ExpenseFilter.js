@@ -3,13 +3,13 @@ import './ExpenseFilter.css';
 
 export const ExpenseFilter = (props) => {
 
-    const onSelectYear=(e)=>{
-        props.onChangeFilter(e.traget.value);
+    const onSelectYear = (e) => {
+        props.onChangeFilter(e.target.value);
     }
 
   return (
     <div className='expenses-filter'>
-        <div className='expense-filter__control'>
+        <div className='expenses-filter__control'>
             <label>Filter by year</label>
             <select value={props.selected} onChange={onSelectYear}> 
                 <option value='2023'>2023</option>
