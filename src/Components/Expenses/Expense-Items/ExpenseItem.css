@@ -21,7 +21,7 @@
 }
 .Title{
     color: #943da6;
-    font-size: 1rem;
+    font-size: 1.5rem;
     flex: 1;
     margin: 0 1rem;
 }
@@ -46,7 +46,7 @@
         font-size: 1rem;
     }
     .Title{
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     .Amount{
         font-size: 1.25rem;
